@@ -1,5 +1,4 @@
 (function(){
-    var UIState = {};
     angular.module( 'flishup' )
     .controller('AppCtrl', [ '$scope', 'App', function( $scope, app ) {
         $scope.exitApp = app.exit;
