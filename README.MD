@@ -17,6 +17,11 @@ Since this pilot flies from AEP to COR, only those two airports are available by
 - write a useful piece of code.
 - have fun
 
+###Some screenshots
+![alt tag](https://github.com/Cosmitar/Flishup/tree/master/resources/screenshots/Screenshot_route.png)
+![alt tag](https://github.com/Cosmitar/Flishup/tree/master/resources/screenshots/Screenshot_list.png)
+![alt tag](https://github.com/Cosmitar/Flishup/tree/master/resources/screenshots/Screenshot_flight.png)
+
 
 #LICENSE
 MIT
