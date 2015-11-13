@@ -1,0 +1,30 @@
+<ion-view view-title="Flight {{flight.flight}}">
+    <ion-content>
+            <div class="hero has-mask " style="background-image: url('{{flight.pic}}');background-size: cover; background-position: center center;box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.7) inset">
+                <div class="content">
+                    <h3><a class="light">{{flight.flight}}</a></h3>
+                    <h4>{{flight.status}}</h4>
+                </div>
+            </div>
+            <div class="button-bar">
+                <span class="button button-dark waves-effect waves-button waves-classic icon ion-calendar">
+                    {{flight.date | date : 'MMM d'}}
+                </span>
+                <span class="button button-dark waves-effect waves-button waves-classic icon ion-clock">
+                    {{flight.time | date : 'HH:mm'}}
+                </span>
+            </div>
+            <h4 class="positive content padding double-padding-x">The Crew</h4>
+            <div class="row responsive-sm" ng-if="isLoadingCrew()">
+                <ion-spinner class="col" style="text-align: center"></ion-spinner>
+            </div>
+            <div class="list animate-fade-slide-in-right">
+                <a style="transition-delay: 0.2s;" class="item item-avatar waves-effect waves-button waves-dark in done"
+                ng-repeat="person in getCrew()">
+                    <span class="avatar " style="background-image: url('./img/person_1.png');"></span>
+                    <h2>{{person.position}}</h2>
+                    <p>{{person.name}}</p>
+                </a>
+            </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+<ion-view view-title="Flights for {{date | date:'MMM d\, y'}} {{origin.iata}} - {{destination.iata}}">
+    <ion-content>
+        <ion-list class="-animate-fade-slide-in-right">
+            <a class="item item-avatar item-icon-right waves-effect waves-button waves-dark" ng-repeat="flight in currentFlights track by $index" href="#/app/flight/{{$index}}">
+                <img ng-src="./img/statuses/{{flight.health}}.png" />
+                <h2>{{flight.flight}} {{flight.registration | registration}}</h2>
+                <p>{{flight.time}} - {{flight.status}}<span ng-if="flight.position != ''"> - position: {{flight.position}}</span></p>
+                <h6 ng-if="flight.crew.lenght != 0">
+                    <i class="ion-person-stalker"></i> {{flight.crew[0].shortName}} - {{flight.crew[1].shortName}}
+                </h6>
+                <i class="icon ion-arrow-right-b"></i>
+            </a>
+        </ion-list>
+    </ion-content>
+</ion-view>

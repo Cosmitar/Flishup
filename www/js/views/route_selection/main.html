@@ -1,0 +1,12 @@
+<ion-view view-title="from {{origDestAirports[0].iata}} to {{origDestAirports[1].iata}}" class="view-origDest">
+    <ion-content scroll="false" class="list condensed-space no-padding">
+        <div class="airport-card dark-bg" style="background-image: url('{{airport.image}}')" ng-repeat="airport in origDestAirports">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                        <h2>{{airport.provName}}</h2>
+                        <p>{{airport.name}}</p>
+            </a>
+        </div>
+    </ion-content>
+    <button class="button button-fab button-fab-middle-right button-assertive icon ion-arrow-swap ion-rotate-90 waves-effect waves-light" ng-click="switchAirportsHandler()"></button>
+    <a no-href="#app/datePicker" ng-click="pickAirportsHandler()" class="button button-fab button-fab-bottom-right button-assertive icon ion-arrow-right-b waves-effect waves-light"></a>
+</ion-view>

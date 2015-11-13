@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="true" debug="APP">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive">
+			<ion-nav-buttons side="secondary">
+				<button class="button button-icon icon ion-navicon flat waves-effect waves-dark" menu-toggle="right">
+				</button>
+			</ion-nav-buttons>
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+		</ion-nav-bar>
+		<ion-nav-view name="mainContent"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="right">
+		<ion-header-bar class="bar-positive">
+			<h1 class="title"></h1>
+		</ion-header-bar>
+		<ion-content>
+			<ion-list>
+				<a class="item waves-effect waves-button waves-dark button-flat" menu-close ng-click="goToOrigDest()">
+					Change Origin / Destination
+				</a>
+				<a class="item waves-effect waves-light" menu-close ng-click="goToDatePicker()">
+					Change Dates
+				</a>
+				<a class="item disabled waves-effect waves-light" style="color: #999;">
+					Configuration
+				</a>
+				<a nav-clear menu-close class="item waves-effect waves-button waves-dark button-flat" ng-click="exitApp()">
+					Quit
+				</a>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+
+
+</ion-side-menus>

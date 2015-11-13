@@ -1,0 +1,18 @@
+<ion-view view-title="Flights date" class="view-origDest">
+    <ion-content scroll="false" class="list condensed-space no-padding">
+        <div class="airport-card dark-bg" >
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse"
+             style="background-image: url('./img/calendar-bg.jpg')"
+             ng-click="pickTodayHandler()">
+                        <h2>Today</h2>
+                        <p>{{today | date : 'dd'}} / {{today | date : 'MM'}}</p>
+            </a>
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse"
+             style="background-image: url('./img/calendar-bg.jpg')"
+             ng-click="pickTomorrowHandler()">
+                        <h2>Tomorrow</h2>
+                        <p>{{tomorrow | date : 'dd'}} / {{today | date : 'MM'}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
