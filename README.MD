@@ -18,9 +18,15 @@ Since this pilot flies from AEP to COR, only those two airports are available by
 - have fun
 
 ###Some screenshots
+<kbd>
 <img src="https://github.com/Cosmitar/Flishup/raw/master/resources/screenshots/Screenshot_route.png" width="300">
+</kbd>
+<kbd>
 <img src="https://github.com/Cosmitar/Flishup/raw/master/resources/screenshots/Screenshot_list.png" width="300">
+</kbd>
+<kbd>
 <img src="https://github.com/Cosmitar/Flishup/raw/master/resources/screenshots/Screenshot_flight.png" width="300">
+</kbd>
 
 ---
 #LICENSE
