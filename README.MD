@@ -1,4 +1,4 @@
-# Experimental tool, built with Ionic framework.
+# Experimental tool, built it with Ionic framework.
 
 This application was created as request for an airline pilot to get information of flights after his service.
 Since this pilot flies from AEP to COR, only those two airports are available by now on the app.
